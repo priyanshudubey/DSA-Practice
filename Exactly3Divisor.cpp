@@ -17,7 +17,7 @@ bool isPrime(int n)
 int exactly3Divisors(int N)
 {
     int count = 0;
-    for(int i=2;i<=sqrt(N);i++){
+    for(int i=2;i*i<=N;i++){
         if(isPrime(int(i))){
             count++;
         }
